@@ -1505,7 +1505,7 @@ function filtrarGlossario(){
 
 async function mostrarConceitos(){
 
-    const resposta = await fetch("Conceitos/conceitos.html");
+    const resposta = await fetch("conceitos/conceitos.html");
 
     const conteudo = await resposta.text();
 
