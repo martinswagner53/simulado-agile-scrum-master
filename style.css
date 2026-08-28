@@ -1,0 +1,1097 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+
+/* ===========================
+   CONFIGURAÇÃO GERAL
+=========================== */
+
+body{
+
+    font-family:'Poppins',sans-serif;
+
+    background:#919292;
+
+    margin:0;
+
+    color:#29383D;
+
+}
+
+
+/* ===========================
+   CONTAINER
+=========================== */
+
+.container{
+
+    width:100%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:flex-start;
+
+    padding:40px 20px;
+
+}
+
+
+/* ===========================
+   CARD PRINCIPAL
+=========================== */
+
+.card{
+
+    background:#F9FBFC;
+
+    width:90%;
+
+    max-width:1200px;
+
+    border-radius:20px;
+
+    padding:50px;
+
+    border:1px solid #CCD7DC;
+
+    box-shadow:
+        0 15px 40px rgba(38,70,83,.13);
+
+}
+
+
+/* ===========================
+   TÍTULOS
+=========================== */
+
+h1{
+
+    color:#245563;
+
+    font-size:32px;
+
+    margin-bottom:10px;
+
+    text-align:center;
+
+}
+
+
+p{
+
+    color:#526268;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===========================
+   BOTÕES
+=========================== */
+
+button{
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:12px;
+
+    font-size:16px;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+    font-weight:600;
+
+}
+
+
+/* ===========================
+   BOTÃO INICIAR
+=========================== */
+
+#btnIniciar{
+
+    background:#245563;
+
+    color:#FFFFFF;
+
+    box-shadow:
+        0 4px 12px rgba(36,85,99,.18);
+
+}
+
+
+#btnIniciar:hover{
+
+    background:#1C4652;
+
+    box-shadow:
+        0 6px 16px rgba(36,85,99,.25);
+
+}
+
+
+/* ===========================
+   BOTÃO CONTINUAR
+=========================== */
+
+#btnContinuar{
+
+    background:#3A8587;
+
+    color:#FFFFFF;
+
+    box-shadow:
+        0 4px 12px rgba(58,133,135,.16);
+
+}
+
+
+#btnContinuar:hover{
+
+    background:#2F7072;
+
+}
+
+
+/* ===========================
+   BOTÃO NOVO
+=========================== */
+
+#btnNovo{
+
+    background:#E4E9EC;
+
+    color:#405158;
+
+    border:1px solid #CDD6DA;
+
+}
+
+
+#btnNovo:hover{
+
+    background:#D8E0E4;
+
+}
+
+
+/* ===========================
+   BOTÕES DESABILITADOS
+=========================== */
+
+button:disabled{
+
+    opacity:.5;
+
+    cursor:not-allowed;
+
+}
+
+
+/* ===========================
+   TELA INICIAL
+=========================== */
+
+.tela-inicial{
+
+    min-height:100vh;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+}
+
+
+/* ===========================
+   BARRA DE PROGRESSO
+=========================== */
+
+.progresso-container{
+
+    margin:20px 0;
+
+}
+
+
+.progresso-texto{
+
+    text-align:center;
+
+    font-weight:bold;
+
+    margin-bottom:8px;
+
+    color:#354950;
+
+}
+
+
+.barra-progresso{
+
+    width:100%;
+
+    height:22px;
+
+    background:#C9D4D9;
+
+    border-radius:20px;
+
+    overflow:hidden;
+
+    box-shadow:
+        inset 0 2px 6px rgba(0,0,0,.12);
+
+}
+
+
+.barra-preenchimento{
+
+    height:100%;
+
+    width:0%;
+
+    background:linear-gradient(
+        90deg,
+        #245563,
+        #3A8587,
+        #55A9A7
+    );
+
+    border-radius:20px;
+
+    box-shadow:
+        0 0 10px rgba(58,133,135,.28);
+
+    transition:width .5s ease;
+
+}
+
+
+.progresso-info{
+
+    text-align:center;
+
+    margin-top:8px;
+
+    font-size:14px;
+
+    color:#68777D;
+
+}
+
+
+/* ===========================
+   MENU INICIAL
+=========================== */
+
+.tela-inicial .card{
+
+    max-width:700px;
+
+}
+
+
+.menu-botoes{
+
+    display:grid;
+
+    grid-template-columns:repeat(2,1fr);
+
+    gap:18px;
+
+    margin-top:30px;
+
+}
+
+
+.menu-botoes button{
+
+    width:100%;
+
+    height:65px;
+
+    margin-top:0;
+
+}
+
+
+.espaco-menu{
+
+    height:40px;
+
+}
+
+
+/* ===========================
+   QUESTÕES
+=========================== */
+
+.questao{
+
+    background:#DCE5E8;
+
+    border-radius:18px;
+
+    padding:30px;
+
+    margin-bottom:35px;
+
+    border:1px solid #BFCED3;
+
+    box-shadow:
+        0 6px 18px rgba(38,70,83,.10);
+
+}
+
+
+.questao h3{
+
+    font-size:17px;
+
+    font-weight:600;
+
+    line-height:1.6;
+
+    color:#33454B;
+
+    margin-bottom:20px;
+
+}
+
+
+/* ===========================
+   OPÇÕES
+=========================== */
+
+.opcao{
+
+    display:block;
+
+    background:#FFFFFF;
+
+    padding:13px 18px;
+
+    margin-bottom:10px;
+
+    border-radius:10px;
+
+    border:1px solid #C7D3D8;
+
+    cursor:pointer;
+
+    font-size:15px;
+
+    line-height:1.4;
+
+    color:#43545A;
+
+    transition:.3s;
+
+}
+
+
+.opcao:hover{
+
+    background:#EDF7F7;
+
+    border-color:#3A8587;
+
+    box-shadow:
+        0 0 8px rgba(58,133,135,.10);
+
+}
+
+
+.opcao input{
+
+    margin-right:12px;
+
+}
+
+
+/* ===========================
+   RESPOSTA CORRETA
+=========================== */
+
+.opcao.correta{
+
+    background-color:#DDF2E7 !important;
+
+    border:2px solid #42A276 !important;
+
+    color:#245D42;
+
+}
+
+
+/* ===========================
+   RESPOSTA ERRADA
+=========================== */
+
+.opcao.errada{
+
+    background-color:#F8DFDF !important;
+
+    border:2px solid #D95C59 !important;
+
+    color:#852E2B;
+
+}
+
+
+/* ===========================
+   BOTÕES DE NAVEGAÇÃO
+=========================== */
+
+.botoes{
+
+    display:flex;
+
+    justify-content:center;
+
+    gap:15px;
+
+    margin-top:40px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.botoes button{
+
+    width:auto;
+
+    min-width:160px;
+
+}
+
+
+/* ===========================
+   ÁREA DO SIMULADO
+=========================== */
+
+#areaSimulado > p{
+
+    text-align:center;
+
+    color:#6A797F;
+
+    margin-bottom:35px;
+
+}
+
+
+/* ===========================
+   TEXTOS PEQUENOS
+=========================== */
+
+small{
+
+    display:block;
+
+    text-align:center;
+
+    margin-top:15px;
+
+    color:#718087;
+
+    font-size:14px;
+
+}
+
+
+/* ===========================
+   MATERIAL DE ESTUDO
+=========================== */
+
+.material-estudo{
+
+    background:#F9FBFC;
+
+    padding:40px;
+
+    border-radius:20px;
+
+}
+
+
+.material-estudo h1{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+/* ===========================
+   TÓPICOS
+=========================== */
+
+.topico{
+
+    background:#DCE5E8;
+
+    padding:25px;
+
+    border-radius:15px;
+
+    margin-bottom:25px;
+
+    border:1px solid #BFCED3;
+
+}
+
+
+.topico h2{
+
+    color:#245563;
+
+    margin-top:0;
+
+    margin-bottom:15px;
+
+}
+
+
+.topico h3{
+
+    color:#4B5C62;
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+}
+
+
+.topico p,
+.topico li{
+
+    font-size:15px;
+
+    line-height:1.7;
+
+    color:#526268;
+
+}
+
+
+.topico ul{
+
+    padding-left:25px;
+
+}
+
+
+/* ===========================
+   DESTAQUE
+=========================== */
+
+.destaque{
+
+    background:#E5F2F3;
+
+    border-left:5px solid #3A8587;
+
+    padding:18px;
+
+    border-radius:10px;
+
+    margin:25px 0;
+
+}
+
+
+/* ===========================
+   ALERTA
+=========================== */
+
+.alerta{
+
+    background:#F9EAEA;
+
+    border-left:5px solid #D95C59;
+
+}
+
+
+/* ===========================
+   CARD DE CONCEITO
+=========================== */
+
+.card-conceito{
+
+    background:#FFFFFF;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+    box-shadow:
+        0 5px 15px rgba(38,70,83,.06);
+
+    border:1px solid #D7E0E3;
+
+}
+
+
+/* ===========================
+   PRINCÍPIO
+=========================== */
+
+.principio{
+
+    background:#FFFFFF;
+
+    padding:18px;
+
+    border-radius:12px;
+
+    margin-top:15px;
+
+    border:1px solid #D7E0E3;
+
+}
+
+
+/* ===========================
+   RESUMO
+=========================== */
+
+.resumo{
+
+    background:#E5F2F3;
+
+    border-left:5px solid #245563;
+
+}
+
+
+/* ===========================
+   LISTAS DO MATERIAL
+=========================== */
+
+.material-estudo ul,
+.material-estudo ol{
+
+    margin:15px 0 25px 25px;
+
+    line-height:1.8;
+
+}
+
+
+.material-estudo h2{
+
+    margin-top:35px;
+
+    color:#245563;
+
+}
+
+
+.material-estudo h3{
+
+    margin-top:20px;
+
+    margin-bottom:10px;
+
+    color:#4B5C62;
+
+}
+
+
+/* ===========================
+   TABELA DE ESTUDO
+=========================== */
+
+.tabela-estudo{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    margin:20px 0;
+
+}
+
+
+.tabela-estudo th{
+
+    background:#245563;
+
+    color:#FFFFFF;
+
+    padding:12px;
+
+}
+
+
+.tabela-estudo td{
+
+    border:1px solid #D2DDE1;
+
+    padding:12px;
+
+    color:#43545A;
+
+}
+
+
+.tabela-estudo tr:nth-child(even){
+
+    background:#F0F4F5;
+
+}
+
+
+/* ===========================
+   BUSCA DO GLOSSÁRIO
+=========================== */
+
+#buscarGlossario{
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    border:1px solid #CDD8DC;
+
+    margin:20px 0;
+
+    font-size:16px;
+
+    background:#FFFFFF;
+
+    color:#33454B;
+
+}
+
+
+#buscarGlossario::placeholder{
+
+    color:#89969B;
+
+}
+
+
+#buscarGlossario:focus{
+
+    outline:none;
+
+    border-color:#3A8587;
+
+    box-shadow:
+        0 0 0 3px rgba(58,133,135,.10);
+
+}
+
+
+/* ===========================
+   TERMOS DO GLOSSÁRIO
+=========================== */
+
+.termo{
+
+    background:#EDF3F4;
+
+    border-left:5px solid #3A8587;
+
+    padding:20px;
+
+    margin-bottom:20px;
+
+    border-radius:12px;
+
+}
+
+
+.termo h3{
+
+    color:#245563;
+
+    margin-bottom:10px;
+
+}
+
+
+.termo p{
+
+    margin:0;
+
+    color:#526268;
+
+    line-height:1.6;
+
+}
+
+
+/* ===========================
+   BOTÃO VOLTAR
+=========================== */
+
+.btn-voltar{
+
+    width:auto;
+
+    padding:10px 20px;
+
+    background:#E5F2F3;
+
+    color:#245563;
+
+    border:1px solid #C5D9DC;
+
+    border-radius:10px;
+
+    font-size:14px;
+
+    font-weight:600;
+
+    margin-bottom:25px;
+
+    cursor:pointer;
+
+}
+
+
+.btn-voltar:hover{
+
+    background:#D8E9EB;
+
+}
+
+
+/* ===========================
+   DESCRIÇÃO INICIAL
+=========================== */
+
+.descricao-inicial{
+
+    text-align:center;
+
+    width:100%;
+
+    line-height:1.6;
+
+    color:#526268;
+
+}
+
+
+/* ===========================
+   RESPONSIVIDADE
+=========================== */
+
+@media (max-width:700px){
+
+    .card{
+
+        width:95%;
+
+        padding:25px;
+
+    }
+
+
+    .menu-botoes{
+
+        grid-template-columns:1fr;
+
+    }
+
+
+    .questao{
+
+        padding:20px;
+
+    }
+
+
+    .material-estudo{
+
+        padding:25px;
+
+    }
+
+
+    h1{
+
+        font-size:27px;
+
+    }
+
+
+    .botoes button{
+
+        width:100%;
+
+    }
+
+}
+
+
+/* ===========================
+   DESTAQUE DOS BOTÕES DE ESTUDO
+=========================== */
+
+.btn-estudo{
+
+    background:#e3e5e6;
+
+    border:2px solid #a4babb;
+
+    color:#245563;
+
+    box-shadow:
+        0 5px 15px rgba(36,85,99,.18);
+
+    font-weight:700;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+.btn-estudo:hover{
+
+    background:#C5DBDF;
+
+    border-color:#245563;
+
+    box-shadow:
+        0 8px 20px rgba(36,85,99,.25);
+
+    transform:translateY(-2px);
+
+}
+
+
+/* Ícone um pouco maior */
+
+.btn-estudo::first-letter{
+
+    font-size:21px;
+
+}
+
+
+/* ===========================
+   DESTAQUE DOS BOTÕES DE ESTUDO
+=========================== */
+
+#btnMaterial,
+#btnGlossario,
+#btnConceitos{
+
+    background:#e3e5e6;
+
+    color:#245563;
+
+    border:2px solid #a4babb;
+
+    box-shadow:
+        0 5px 15px rgba(36,85,99,.18);
+
+    font-weight:700;
+
+}
+
+
+/* Efeito ao passar o mouse */
+
+#btnMaterial:hover,
+#btnGlossario:hover,
+#btnConceitos:hover{
+
+    background:#C5DBDF;
+
+    border-color:#245563;
+
+    box-shadow:
+        0 8px 20px rgba(36,85,99,.25);
+
+    transform:translateY(-2px);
+
+}
+
+/* ===========================
+   BOTÕES DOS CAPÍTULOS
+=========================== */
+
+[id^="cap"]{
+
+    border:2px solid #638F99;
+
+    transition:
+        background .25s ease,
+        border-color .25s ease,
+        box-shadow .25s ease,
+        transform .2s ease;
+
+}
+
+
+/* ===========================
+   AO PASSAR O MOUSE
+=========================== */
+
+[id^="cap"]:hover{
+
+    background:#C5DBDF;
+
+    color:#245563;
+
+    border-color:#245563;
+
+    box-shadow:
+        0 8px 20px rgba(36,85,99,.20);
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ===========================
+   HOVER DOS CAPÍTULOS
+=========================== */
+
+[id^="cap"]:hover{
+
+    background:#C5DBDF;
+
+    color:#245563;
+
+    border-color:#245563;
+
+    box-shadow:
+        0 8px 20px rgba(36,85,99,.20);
+
+    transform:translateY(-2px);
+
+}
